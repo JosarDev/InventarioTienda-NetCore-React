@@ -4,7 +4,7 @@ Aplicación full stack para gestión de inventario de tienda. Backend en ASP.NET
 ## Tecnologías
 - Backend: ASP.NET Core Web API
 - Frontend: React
-- Base de datos: Por definir
+- Base de datos: SQLite
 - ORM: Entity Framework Core
 
 ## Estructura del proyecto
