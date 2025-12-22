@@ -25,6 +25,7 @@ Sistema completo que permite al administrador:
 
 ## 📂 Estructura del Proyecto
 
+```tree
 InventarioTienda-NetCore-React/
 ├── Backend/                  # API REST .NET Core
 │   ├── Controllers/          # ProductsController y GenerateDescriptionController
