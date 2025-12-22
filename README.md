@@ -67,8 +67,9 @@ InventarioTienda-NetCore-React/
    - npm install
    - npm run dev
 4. Configuración Gemini (opcional pero recomendado):
-   Obtén una API Key gratuita en: <https://aistudio.google.com/app/apikey>
-   Crea el archivo Backend/appsettings.Development.json (NO lo subas a GitHub):
+  - Obtén una API Key gratuita en: <https://aistudio.google.com/app/apikey>
+  - Crea el archivo Backend/appsettings.Development.json (NO lo subas a GitHub):
+```tree
    {
     "Gemini": {
         "ApiKey": "TU_API_KEY_AQUI"
