@@ -45,7 +45,6 @@ InventarioTienda-NetCore-React/
 ```
 
 ## ⚙️Requisitos Previos
-
 - .NET SDK 8 o superior
 - Node.js 18+
 - Git
@@ -69,9 +68,9 @@ InventarioTienda-NetCore-React/
 4. Configuración Gemini (opcional pero recomendado):
   - Obtén una API Key gratuita en: <https://aistudio.google.com/app/apikey>
   - Crea el archivo Backend/appsettings.Development.json (NO lo subas a GitHub):
-```tree
-   {
-    "Gemini": {
-        "ApiKey": "TU_API_KEY_AQUI"
-     }
-    }
+   ```bash
+      {
+       "Gemini": {
+           "ApiKey": "TU_API_KEY_AQUI"
+        }
+       }
