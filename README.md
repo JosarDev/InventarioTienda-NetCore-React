@@ -56,14 +56,14 @@ InventarioTienda-NetCore-React/
    git clone https://github.com/JosarDev/InventarioTienda-NetCore-React.git
    cd InventarioTienda-NetCore-React
 2. Backend:
-    cd Backend
-    dotnet restore
-    dotnet ef database update  # Aplica migraciones
-    dotnet run
+   - cd Backend
+   - dotnet restore
+   - dotnet ef database update  # Aplica migraciones
+   - dotnet run
 3. Frontend:
-    cd ../Frontend
-    npm install
-    npm run dev
+   - cd ../Frontend
+   - npm install
+   - npm run dev
 4. Configuración Gemini (opcional pero recomendado):
    Obtén una API Key gratuita en: <https://aistudio.google.com/app/apikey>
    Crea el archivo Backend/appsettings.Development.json (NO lo subas a GitHub):
