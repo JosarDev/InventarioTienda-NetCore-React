@@ -1,3 +1,5 @@
+```markdown
+```tree
 # 📦 Inventario de Productos - Prueba Técnica ISES
 
 Aplicación full stack para gestión de inventario de una tienda. Desarrollada como prueba técnica para proceso de selección en ISES.
@@ -25,7 +27,6 @@ Sistema completo que permite al administrador:
 
 ## 📂 Estructura del Proyecto
 
-```tree
 InventarioTienda-NetCore-React/
 ├── Backend/                  # API REST .NET Core
 │   ├── Controllers/          # ProductsController y GenerateDescriptionController
