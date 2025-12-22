@@ -1,4 +1,3 @@
-```markdown
 ```tree
 # 📦 Inventario de Productos - Prueba Técnica ISES
 
