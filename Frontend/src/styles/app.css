@@ -1,0 +1,281 @@
+/* Reset y estilos base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Títulos */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #60a5fa;
+  font-weight: 600;
+}
+
+/* Tarjetas */
+.card {
+  background: #1e293b;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid #334155;
+  transition: transform 0.2s ease;
+}
+
+/* Efecto hover en tarjetas */
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Alertas */
+.alert {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2000;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 0;
+  font-weight: 600;
+  text-align: center;
+  min-width: 300px;
+  max-width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  animation: slideDown 0.4s ease;
+}
+
+/* Tipos de alertas */
+.alert.success {
+  background: #166534;
+  color: #86efac;
+  border: 1px solid #22c55e;
+}
+
+.alert.error {
+  background: #7f1d1d;
+  color: #fca5a5;
+  border: 1px solid #ef4444;
+}
+
+/* Animación de aparición */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+/* Formulario */
+.form {
+  display: grid;
+  gap: 1.2rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Encabezados de formulario */
+.form h2 {
+  margin: 0 0 1.5rem 0;
+  color: #93c5fd;
+  text-align: center;
+}
+
+/* Etiquetas de formulario */
+.form input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  background: #0f172a;
+  border: 2px solid #334155;
+  border-radius: 10px;
+  color: #e2e8f0;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+/* Efecto focus en inputs */
+.form input:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.3);
+}
+
+/* Placeholder de inputs */
+.form input::placeholder {
+  color: #64748b;
+}
+
+/* Botones */
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Estilos base de botones */
+button {
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+/* Variantes de botones */
+button.primary {
+  background: #3b82f6;
+  color: white;
+}
+
+/* Efecto hover en botones */
+button.primary:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Variantes secundarias y de peligro */
+button.secondary {
+  background: #475569;
+  color: white;
+}
+
+/* Efecto hover en botones secundarios */
+button.secondary:hover {
+  background: #334155;
+}
+
+/* Botón de peligro */
+button.danger {
+  background: #dc2626;
+  color: white;
+}
+
+/* Efecto hover en botón de peligro */
+button.danger:hover {
+  background: #b91c1c;
+}
+
+/* Tabla Desktop */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 0.75rem;
+}
+
+th {
+  text-align: left;
+  padding: 1rem;
+  background: #1e293b;
+  color: #94a3b8;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+}
+
+td {
+  padding: 1.2rem;
+  background: #0f172a;
+}
+
+tr td:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+tr td:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* Tabla Móvil */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem 0.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    background: #0f172a;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    padding: 1.2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  td {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #60a5fa;
+    font-size: 0.9rem;
+  }
+
+  td .actions {
+    margin-top: 0.5rem;
+    align-self: flex-end;
+  }
+
+  .actions {
+    justify-content: flex-end;
+  }
+}
+
+.report-summary {
+  background: linear-gradient(135deg, #1e293b, #334155);
+  border: 1px solid #60a5fa;
+}
+
+td[data-label="Descripción"] {
+  max-width: 300px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/* En móvil */
+@media (max-width: 768px) {
+  td[data-label="Descripción"] {
+    white-space: normal;
+  }
+}

@@ -416,3 +416,8 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Configuración local con claves secretas
+appsettings.Development.json
+appsettings.Local.json
+launchSettings.json
