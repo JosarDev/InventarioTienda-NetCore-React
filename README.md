@@ -1,4 +1,4 @@
-# 📦 Inventario de Productos - Prueba Técnica ISES
+# 📦 Inventario de Productos
 
 Aplicación full stack para gestión de inventario de una tienda. Desarrollada como prueba técnica para proceso de selección en ISES.
 
